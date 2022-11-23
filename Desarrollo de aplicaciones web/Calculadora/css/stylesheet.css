@@ -1,0 +1,39 @@
+#resultado{
+  grid-column: 1 / -1;
+  border: solid 2px #000;
+  border-radius: 5px;
+  font-size: 32px;
+  text-align: right;
+  height: 50px;
+  word-wrap: break-word;
+}
+
+button{
+    background: #f0f0f0;
+    color: #000;
+    border-radius: 5px;
+    font-size: 24px;
+}
+
+button:hover{
+  background: grey;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(4, 70px) ;
+  grid-auto-rows: 70px;
+  gap: 10px;
+  padding: 5px;
+  margin: 5px;
+}
+
+#uno,#dos,#tres,#cuatro,#cinco,#seis,#siete,#ocho,#nueve,#cero{
+  background: #ffffff;
+  color: #000;
+}
+
+
+#uno:hover,#dos:hover,#tres:hover,#cuatro:hover,#cinco:hover,#seis:hover,#siete:hover,#ocho:hover,#nueve:hover,#cero:hover{
+  background: grey;
+}

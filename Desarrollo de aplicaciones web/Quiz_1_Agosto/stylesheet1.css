@@ -1,0 +1,86 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body { min-height: 100vh; }
+
+#logo{
+    background-color: skyblue;
+    height: 75px;
+    padding: 0px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#menuver{
+    background-color: red;
+    width: 20%;
+    float: left;
+    height: 100%;
+    display: flex;
+}
+
+.menuitem{
+    justify-content: center;
+    padding: 5px;
+    margin: 5px 0px;
+    font-size: 16px;
+    border: 1px solid black;
+    text-align: center;
+    cursor: pointer;
+    list-style-type: none;
+}
+
+.peliitem{
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    list-style-type: none;
+}
+
+#mes{
+    width: 100px;
+    height: 200px;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    justify-content: center;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+#menuhor{
+    text-align: center;
+    background-color: green;
+    padding: 0px;
+    width: 80%;
+    float: left;
+}
+
+img{
+    margin: 5px;
+    width: 200px;
+    height: 400px;
+}
+
+#infopeli{
+    justify-content: center;
+    text-align: center;
+    width: 400px;
+    height: 400px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+iframe{
+    margin: 50px;
+}

@@ -1,0 +1,82 @@
+body{
+    background: yellow;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(5,20%);
+    grid-template-rows: repeat(6,15%);
+    font-size: 50px;
+    text-align: center;
+    margin: 2px;
+}
+
+.container-B{
+    color: red;
+}
+.container-I{
+    color: blue;
+}
+.container-N{
+    color: purple;
+}
+.container-G{
+    color: green;
+}
+.container-O{
+    color: orange;
+}
+.number,.number-b,.number-i,.number-n,.number-g,.number-o{
+    width: auto;
+    height: 50px;
+    background: white;
+    margin: 5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.number-b:hover, .number-i:hover, .number-n:hover, .number-g:hover, .number-o:hover{
+    background: grey;
+}
+.bingo{
+    width: 200px;
+    height: 60px;
+    background: gold;
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.nextBalota{
+    width: 400px;
+    height: 60px;
+    background: gold;
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.nextBalota:hover, .bingo:hover{
+    color: red;
+}
+
+.active, .number-b:active, .number-i:active, .number-n:active, .number-g:active, .number-o:active{
+    background: grey;
+}
+
+.number{
+    background: white;
+    color: red;
+}
+.balota{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin-top: -50px;
+    font-size: 50px;
+}
+.bottom-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

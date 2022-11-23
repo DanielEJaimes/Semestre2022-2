@@ -1,0 +1,132 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-width: 300px;
+}
+
+.flex-container .sbtn {
+    width: 20%;
+    min-width: 120px;
+    max-width: 200px;
+    height: 120px;        
+    margin: 5px;
+    text-align: center;
+    line-height: 120px;
+    font-size: 30px; 
+    font-weight: bold;
+    color: black;   
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.sbtn {
+    cursor: pointer;
+}
+
+.sbtn:active,
+.active{
+    filter: brightness(200%);
+}
+
+.green {
+    background-color: rgb(40, 198, 40);
+    border-radius: 60px 10px 10px 10px; 
+}
+
+.red {
+    background-color: rgb(188, 31, 31);
+    border-radius: 10px 60px 10px 10px; 
+}
+
+.yellow {
+    background-color: rgb(190, 190, 33);
+    border-radius: 10px 10px 10px 60px; 
+}
+
+.blue {
+    background-color: rgb(37, 37, 214);
+    border-radius: 10px 10px 60px 10px; 
+}
+
+#btnStart{    
+    display: block;
+    width: 100px;
+    margin-top: 20px;        
+    padding: 18px;    
+    border-radius: 10px;
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    border: 1px solid rgb(155, 155, 155);
+    background-color: rgb(127, 218, 127);
+    cursor: pointer;
+}
+
+#btnStart:hover{
+    background: aquamarine;
+}
+
+#btnStart:disabled{
+    background: aquamarine;
+
+}
+
+.dropbtn {
+    min-width: 100px;
+    margin-top: 20px;        
+    padding: 18px;    
+    border-radius: 10px;
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    border: 1px solid rgb(155, 155, 155);
+    background-color: rgb(127, 218, 127);
+}
+
+.dropdown {
+    margin: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    border: 1px solid rgb(155, 155, 155);
+    background-color: rgb(127, 218, 127);
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.scoreboard{
+    margin: 20px;
+    text-align: left;
+    background: black;
+    border: solid 1px;
+    min-width: 200px;
+    width: auto;
+}
+
+#nickname{
+    font-size: 30px;
+    width: 90px;
+    height: 35px;
+    align-items: center;
+    margin-top: 45px;
+}
