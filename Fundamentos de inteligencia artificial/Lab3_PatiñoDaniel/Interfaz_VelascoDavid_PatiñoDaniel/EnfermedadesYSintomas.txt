@@ -1,0 +1,17 @@
+Pudrición del cogollo
+flechaPodrida → hojaAusenciaNuevas → cogolloPodrido → hojaJovenAmarilla → hojaJovenMordisco
+
+Marchitez sorpresiva
+frutoSinBrillo → racimoPodrido → folioloCafe → folioloDeshidratado → raicesInsecto
+
+Anillo Rojo
+corteCafe → hojaPequeña → folioloVerde (corto) → colorDecolorado
+
+Marchitez letal
+frutoSinBrillo → racimoPodrido → raicesPodridas → folioloDeshidratado
+
+Amarillamiento letal
+hojaJovenAmarilla → raicesPodridas → flechaPodrida → racimoPodrido
+
+Anillo Marrón
+hojaJovenAmarilla → racimoPodrido → corteCafe

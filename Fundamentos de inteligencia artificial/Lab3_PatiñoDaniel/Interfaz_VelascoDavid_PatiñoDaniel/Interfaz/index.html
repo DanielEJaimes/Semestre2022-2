@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Interfaz 2.0</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row my-3">
+            <div class="col-2">
+                <div class="dropdown my-2">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Flechas
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+                        <li class="dropdown-item"><input type="checkbox" name="flechaSin" id="flechaSin" onclick="addSintoma(0)"> Sin particularidad</li>
+                        <li class="dropdown-item"><input type="checkbox" name="" id="flechaPodrida" onclick="addSintoma(1)"> Podridas</li>
+                    </ul>
+                </div>
+                <div class="dropdown my-2">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Hojas
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+                        <li class="dropdown-item"><input type="checkbox" name="" id="hojaSin" onclick="addSintoma(2)"> Sin particularidad</li>
+                        <li class="dropdown-item"><input type="checkbox" name="" id="hojaQuebrada" onclick="addSintoma(3)"> Quebradas</li>
+                        <li class="dropdown-item"><input type="checkbox" name="" id="hojaPequeña" onclick="addSintoma(4)"> Pequeñas</li>
+                        <li class="dropdown-item"><input type="checkbox" name="" id="hojaAmarilla" onclick="addSintoma(5)"> Hojas jóvenes amarillas</li>
+                        <li class="dropdown-item"><input type="checkbox" name="" id="hojaNueva" onclick="addSintoma(6)"> Ausencia de nuevas hojas</li>
+                        <li class="dropdown-item"><input type="checkbox" name="" id="hojaMordisco" onclick="addSintoma(7)"> Presencia de "mordiscos" en
+                            hojas jóvenes</li>
+                    </ul>
+                </div>
+
+                <div class="dropdown my-2">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Cogollo
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+                        <li class="dropdown-item"><input type="checkbox" name="" id="cogolloSin" onclick="addSintoma(8)"> Sin particularidad</li>
+                        <li class="dropdown-item"><input type="checkbox" name="" id="cogolloPodrido" onclick="addSintoma(9)"> Pudrición de sus tejidos</li>
+                    </ul>
+                </div>
+                <div class="dropdown my-2">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Frutos
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+                        <li class="dropdown-item"><input type="checkbox" name="" id="frutoSin" onclick="addSintoma(10)"> Sin particularidad</li>
+                        <li class="dropdown-item"><input type="checkbox" name="" id="frutoBrillo" onclick="addSintoma(11)"> Pérdida de brillo</li>
+                    </ul>
+                </div>
+                <div class="dropdown my-2">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Racimos
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+                        <li class="dropdown-item"><input type="checkbox" name="" id="racimoSin" onclick="addSintoma(12)"> Sin particularidad</li>
+                        <li class="dropdown-item"><input type="checkbox" name="" id="racimoPodrido" onclick="addSintoma(13)"> Podridos</li>
+                    </ul>
+                </div>
+                <div class="dropdown my-2">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Foliolos
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+                        <li class="dropdown-item"><input type="checkbox" name="" id="folioloSin" onclick="addSintoma(14)"> Sin particularidad</li>
+                        <li class="dropdown-item"><input type="checkbox" name="" id="folioloCafe" onclick="addSintoma(15)"> Decoloración café</li>
+                        <li class="dropdown-item"><input type="checkbox" name="" id="folioloCorto" onclick="addSintoma(16)"> Cortos color verde</li>
+                        <li class="dropdown-item"><input type="checkbox" name="" id="folioloDeshidratado" onclick="addSintoma(17)"> Deshidratación</li>
+                    </ul>
+                </div>
+                <div class="dropdown my-2">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Raíces
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+                        <li class="dropdown-item"><input type="checkbox" name="" id="raizSin" onclick="addSintoma(18)"> Sin particularidad</li>
+                        <li class="dropdown-item"><input type="checkbox" name="" id="raizPodrida" onclick="addSintoma(19)"> Podridas</li>
+                        <li class="dropdown-item"><input type="checkbox" name="" id="raizInsectos" onclick="addSintoma(20)"> Presencia de insectos nematodo
+                        </li>
+                    </ul>
+                </div>
+                <div class="dropdown my-2">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Corte transversal
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+                        <li class="dropdown-item"><input type="checkbox" name="" id="corteSin" onclick="addSintoma(21)"> Sin particularidad</li>
+                        <li class="dropdown-item"><input type="checkbox" name="" id="corteCafe" onclick="addSintoma(22)"> Presencia de anillo color café
+                        </li>
+                    </ul>
+                </div>
+                <div class="dropdown my-2">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Color interno
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+                        <li class="dropdown-item"><input type="checkbox" name="" id="colorSin" onclick="addSintoma(23)"> Sin particularidad</li>
+                        <li class="dropdown-item"><input type="checkbox" name="" id="colorDecolorado" onclick="addSintoma(24)"> Decoloración</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-4">
+                <canvas class="canvas" id="canvas" width="440px" height="500px">
+
+                </canvas>
+            </div>
+            <div class="col-3">
+                <div class="row ps-2">
+                    <p>
+                    A: Flecha podrida<br>
+                    B: Raíces podridas<br>
+                    C: Hojas jóvenes amarillas<br>
+                    D: Racimo podrido<br>
+                    E: Corte café<br>
+                    F: Frutos sin brillo<br>
+                    G: Foliolo deshidratado<br>
+                    H: Amarillamiento letal<br>
+                    I: Anillo Marrón<br>
+                    J: Hoja pequeña<br>
+                    K: Marchitez letal<br>
+                    L: Foliolo café<br>
+                    M: Presencia de insectos nematodo en las raíces<br>
+                    N: Marchitez sorpresiva<br>
+                    O: Foliolo corto y verde<br>
+                    P: Decoloración interna<br>
+                    Q: Presencia de "mordiscos" en hojas jóvenes<br>
+                    R: Cogollo podrido<br>
+                    S: Ausencia de hojas nuevas<br>
+                    T: Anillo Rojo<br>
+                    U: Pudrición del cogollo<br>
+                </p>
+                </div>
+                <div class="row">
+                    <div class="boton" id="generar">
+                        Generar diagnóstico
+                    </div>
+                </div>
+            </div>
+            <div class="col-3" id="resultado">
+                <h1>Diagnóstico</h1>
+                <div class="accordion" id="accordionExample">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="logic.js"></script>
+</body>
+
+</html>

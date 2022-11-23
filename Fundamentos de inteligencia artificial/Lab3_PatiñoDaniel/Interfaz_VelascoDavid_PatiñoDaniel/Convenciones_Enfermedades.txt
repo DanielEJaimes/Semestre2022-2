@@ -1,0 +1,21 @@
+A: Flecha podrida
+B: Raíces podridas
+C: Hojas jóvenes amarillas
+D: Racimo podrido
+E: Corte café
+F: Frutos sin brillo
+G: Foliolo deshidratado
+H: Amarillamiento letal
+I: Anillo Marrón
+J: Hoja pequeña
+K: Marchitez letal
+L: Foliolo café
+M: Presencia de insectos nematodo en las raíces
+N: Marchitez sorpresiva
+O: Foliolo corto y verde
+P: Decoloración interna
+Q: Presencia de "mordiscos" en hojas jóvenes
+R: Cogollo podrido
+S: Ausencia de hojas nuevas
+T: Anillo Rojo
+U: Pudrición del cogollo

@@ -1,0 +1,29 @@
+.container-fluid {
+    max-width: 1345px;
+    width: 1345px;
+}
+
+.dropdown button {
+    width: 180px;
+}
+
+.canvas {
+    border: 1px solid black;
+}
+
+.boton {
+    margin: 10px auto;
+    padding: 8px;
+    color: white;
+    border-radius: 25px;
+    background-color: #5CCB5F;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    width: 75%;
+}
+
+.boton:hover {
+    background-color: #efa229;
+}
